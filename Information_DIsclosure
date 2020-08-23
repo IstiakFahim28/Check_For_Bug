@@ -1,0 +1,24 @@
+- [ ]  Fuzz on interesting Endpoint.
+
+       1→ Try Unexpected Data Types on Interesting Endpoints
+
+       2→ Check Error message and Response
+
+- [ ]  Check robots.txt and sitemap.xml
+- [ ]  Check Source Code, Comments, Verbose Error Messages
+- [ ]  Use Burpsuite Engangement tools to Find comment out msg, Script etc.
+- [ ]  Try to Use Every HTTP Methods.
+- GET
+- POST
+- TRACE
+- OPTIONS
+- [ ]  TRACE  Method ⇒
+- Designed for Diagnostic purpose
+- If enable →
+    - Web server will respond to requests that use TRACE method by echoing in the response the exact request that was received
+    - Lead to Information Disclosure
+        - Name of Internal Authentication Headers to request by Proxies
+        - X-CUSTOM-IP-Authorization:127.0.0.1  in Match & Replace Rule in Burp Suite
+- [ ]  Use ~ [Tilde] → filename.php~
+- [ ]  Check for common Directories and directory Listings
+- .svn , .git etc
